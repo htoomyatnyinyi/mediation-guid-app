@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [inputMinutes, setInputMinutes] = useState(120); // Default 2 hours
