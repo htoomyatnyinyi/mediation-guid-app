@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+
+  output: "standalone", // Required for tiny Docker + Bun
   // // Explicitly handle MP3 for Turbopack/Webpack fallback
   // webpack: (config, { isServer }) => {
   //   if (!isServer) {
@@ -15,9 +17,9 @@ const nextConfig: NextConfig = {
   //   }
   //   return config;
   // },
-  experimental: {
-    // Turbopack is not available as a configuration option in this version
-  },
+  // experimental: {
+  //   // Turbopack is not available as a configuration option in this version
+  // },
 };
 
 export default nextConfig;
